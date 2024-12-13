@@ -1,144 +1,146 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
-    min-height: 100vh; 
-    background-color: #f4f4f9;
-    text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f4f4f9;
+  text-align: center;
 }
 
+.container {
+  display: flex;
+  margin-top: 200px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  width: 100%;
+}
 
 .color-picker-container {
-    position: relative;
-    width: 90%;
-    max-width: 500px;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 30px; 
+  position: relative;
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
 }
 
 /* Wizard hat styling */
 .color-picker-container::before {
-    content: '';
-    position: absolute;
-    top: -150px;
-    left: -120px;
-    width: 250px;
-    height: 250px;
-    background: url(assets/wizard-hat.png) no-repeat center center;
-    background-size: contain;
-    transform: rotate(-30deg);
+  content: "";
+  position: absolute;
+  top: -150px;
+  left: -120px;
+  width: 250px;
+  height: 250px;
+  background: url(assets/wizard-hat.png) no-repeat center center;
+  background-size: contain;
+  transform: rotate(-30deg);
 }
 
-
 input[type="text"] {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
-    font-size: 1rem;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-    transition: border-color 0.3s;
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s;
 }
 
 input[type="text"]:focus {
-    border-color: #b36234;
+  border-color: #b36234;
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    background-color: #f88747;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  background-color: #f88747;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #b36234;
+  background-color: #b36234;
 }
 
-
 .color-result {
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .color-display {
-    width: 100px;
-    height: 100px;
-    border-radius: 5px;
-    border: 2px solid #ccc;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .color-info {
-    font-size: 1rem;
-    color: #333;
+  font-size: 1rem;
+  color: #333;
 }
 
 .color-error {
-    color: red;
-    font-size: 0.9rem;
-    margin-top: 10px;
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
 }
 
-
 .footer {
-    text-align: center;
-    padding: 20px 0;
-    width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
 }
 
 .footer-links {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
 }
 
 .footer-links a {
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #f88747;
-    transition: color 0.3s, text-shadow 0.3s;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f88747;
+  transition: color 0.3s, text-shadow 0.3s;
 }
 
 .footer-links a:hover {
-    color: #b36234;
-    
+  color: #b36234;
 }
 
 /* Responsive Design */
 @media (max-width: 600px) {
-    input[type="text"], button {
-        width: 100%;
-        margin: 5px 0;
-    }
+  input[type="text"],
+  button {
+    width: 100%;
+    margin: 5px 0;
+  }
 
-    .footer-links {
-        flex-direction: column;
-        gap: 10px;
-    }
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
 }

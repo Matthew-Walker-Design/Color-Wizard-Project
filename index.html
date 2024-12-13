@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color Picker App</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="color-picker-container">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="color-picker-container">
         <h1>Color Wizard</h1>
-        <p>Enter a color value (e.g., #24B1E0, rgb(255,0,0), or hsl(200, 100%, 50%) and use the <b>color spell!</b></p>
-        <input type="text" id="color-input" placeholder="Enter color (e.g., #24B1E0)" />
+        <p>
+          Enter a color value (e.g., #24B1E0, rgb(255,0,0), or hsl(200, 100%,
+          50%) and use the <b>color spell!</b>
+        </p>
+        <input
+          type="text"
+          id="color-input"
+          placeholder="Enter color (e.g., #24B1E0)"
+        />
         <button id="get-color">Color Spell</button>
         <div id="color-result" class="color-result">
-            <div id="color-display" class="color-display"></div>
-            <div id="color-info" class="color-info"></div>
-            <div id="color-error" class="color-error"></div>
+          <div id="color-display" class="color-display"></div>
+          <div id="color-info" class="color-info"></div>
+          <div id="color-error" class="color-error"></div>
         </div>
-    </div>
-    <footer class="footer">
+      </div>
+      <footer class="footer">
         <p>Check out more work by Matthew Walker Design:</p>
         <div class="footer-links">
-            <a href="https://www.matthewwalker.design/" target="_blank">Portfolio</a>
-            <a href="https://github.com/Matthew-Walker-Design" target="_blank">GitHub</a>
-            <a href="https://yourblog.com" target="_blank">Blog</a>
+          <a href="https://www.matthewwalker.design/" target="_blank"
+            >Portfolio</a
+          >
+          <a href="https://github.com/Matthew-Walker-Design" target="_blank"
+            >GitHub</a
+          >
+          <a href="https://yourblog.com" target="_blank">Blog</a>
         </div>
-    </footer>
+      </footer>
+    </div>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
